@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=VGXG8-38L10-9UU4U-SL8N5-81HVZ-W5PW6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\past\单片机报告\单片机大作业\程序源码\单片机大作业stm32\USER\TEST.uvprojx
+Project File Date:  12/27/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling KEY.c...
+..\HARDWARE\LED\led.h(51): warning:  #47-D: incompatible redefinition of macro "LED8_ON"  (declared at line 44)
+  #define  	LED8_ON      	GPIO_SetBits(GPIOC, GPIO_Pin_13)
+..\NEWHARDWARE\KEY.c(236): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下4次机会");	
+..\NEWHARDWARE\KEY.c(240): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下3次机会");
+..\NEWHARDWARE\KEY.c(244): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下2次机会");
+..\NEWHARDWARE\KEY.c(248): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下1次机会");
+..\NEWHARDWARE\KEY.c(252): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下0次机会");
+..\NEWHARDWARE\KEY.c(270): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下4次机会");	
+..\NEWHARDWARE\KEY.c(274): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下3次机会");
+..\NEWHARDWARE\KEY.c(278): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下2次机会");
+..\NEWHARDWARE\KEY.c(282): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下1次机会");
+..\NEWHARDWARE\KEY.c(286): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  			LCD_ShowString_1(180,300,"你还剩下0次机会");
+..\NEWHARDWARE\KEY.c(302): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	LCD_ShowString(200, 200, 240, 24, 24, a);	
+..\NEWHARDWARE\KEY.c(303): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  	LCD_ShowString_1(180,300,"    密码正确     ");
+..\NEWHARDWARE\KEY.c(559): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  						LCD_ShowString_1(180,300," 录入成功 ");
+..\NEWHARDWARE\KEY.c(621): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  	LCD_ShowString_1(200,50," 删卡模式 ");
+..\NEWHARDWARE\KEY.c(646): warning:  #223-D: function "LCD_ShowString_1" declared implicitly
+  		LCD_ShowString_1(200,150*keyx+150," 卡不存在 ");
+..\NEWHARDWARE\KEY.c(637): warning:  #177-D: variable "i"  was declared but never referenced
+  	u16 i=keyx;
+..\NEWHARDWARE\KEY.c(651): warning:  #177-D: variable "j"  was declared but never referenced
+  	u16 i,j;
+..\NEWHARDWARE\KEY.c: 18 warnings, 0 errors
+linking...
+Program Size: Code=20386 RO-data=274502 RW-data=560 ZI-data=1800  
+FromELF: creating hex file...
+"..\OBJ\TEST.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.7.0.pack
+                Keil.STM32F4xx_DFP.2.7.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\cyy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
