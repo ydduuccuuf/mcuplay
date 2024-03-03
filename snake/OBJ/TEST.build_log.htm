@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=VGXG8-38L10-9UU4U-SL8N5-81HVZ-W5PW6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\cyy\Desktop\tss\USER\TEST.uvprojx
+Project File Date:  01/20/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling test.c...
+..\NEWHARDWARE\TIME.h(37): warning:  #1-D: last line of file ends without a newline
+  #endif
+test.c(189): warning:  #223-D: function "bibi_init" declared implicitly
+  		bibi_init();
+test.c(197): warning:  #223-D: function "TIM3_Int_Init" declared implicitly
+  	TIM3_Int_Init(4999,7199); //初始化定时器
+test.c(208): warning:  #223-D: function "Load_keyboard" declared implicitly
+  Load_keyboard(0,500,key_menu);
+test.c(212): warning:  #223-D: function "Get_keynum" declared implicitly
+      Get_keynum(0,500);
+test.c(213): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      LCD_ShowString(200, 400, 240, 24, 24, a);
+test.c(222): warning:  #223-D: function "snakeInit" declared implicitly
+  	snakeInit();
+test.c(223): warning:  #223-D: function "GameStart" declared implicitly
+  	GameStart();
+test.c(184): warning:  #177-D: variable "m"  was declared but never referenced
+  		u8 m=0;
+test.c(185): warning:  #177-D: variable "x"  was declared but never referenced
+  		u16 x=0;
+test.c(186): warning:  #177-D: variable "y"  was declared but never referenced
+  		u16 y=0;
+test.c(194): warning:  #177-D: variable "exit_keyboard"  was declared but never referenced
+      u8 exit_keyboard=0;
+test.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=13966 RO-data=6766 RW-data=172 ZI-data=2300  
+FromELF: creating hex file...
+"..\OBJ\TEST.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.7.0.pack
+                Keil.STM32F4xx_DFP.2.7.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\cyy\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
